@@ -1,0 +1,14 @@
+.body {
+    display: flex;
+    min-height: 25vh;
+    justify-content: center;
+    flex-direction: column;
+    border-style: dotted;
+}
+
+.searchbar-container {
+    border-style: double;
+    text-align: center;
+    align-self: center;
+    padding: 50px;
+}
