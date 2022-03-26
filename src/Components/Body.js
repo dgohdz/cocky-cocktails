@@ -4,10 +4,10 @@ import "../Stylesheets/Body.css";
 export default class Body extends Component {
   render() {
     return (
-      <section className="body">
-        <div className="searchbar-container">
+      <section className="body-container">
+        <div className="searchbar">
           <form className="form">
-            <input type="text" placeholder="Search a flavor" />
+            <input className="input" type="text" placeholder="Search a flavor" />
           </form>
         </div>
       </section>
