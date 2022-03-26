@@ -1,12 +1,13 @@
 import React, { Component } from "react";
+import '../Stylesheets/Body.css'
 
-export default class Footer extends Component {
+export default class Body extends Component {
   render() {
     return (
       <>
         <section>
           <div>
-            <p>Footer</p>
+            <p>Body</p>
           </div>
         </section>
       </>
