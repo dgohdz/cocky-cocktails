@@ -2,7 +2,7 @@ import "./App.css";
 import Body from "./Components/Body";
 import Header from "./Components/Header";
 import Searchbar from "./Components/Searchbar";
-import Drinks from "./Components/Drinks";
+import DrinkShow from "./Components/DrinkShow";
 import Footer from "./Components/Footer";
 import { Component } from "react";
 
@@ -38,7 +38,7 @@ class App extends Component {
           <Header />
           <Body />
           <Searchbar />
-          <Drinks />
+          <DrinkShow />
           <Footer />
           <button onClick={this.readDrinks}>Search</button>
           <p>Try these drinks {this.state.drinks.drinks}</p>
