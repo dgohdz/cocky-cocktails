@@ -5,15 +5,22 @@ import Header from "./Components/Header";
 import Searchbar from "./Components/Searchbar";
 // import DrinkShow from "./Components/DrinkShow";
 import Footer from "./Components/Footer";
-import mockdrinks from './MockDrinks'
+// import mockdrinks from './MockDrinks'
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      drinks: mockdrinks.drinks,
-      pic: ""
+      drinks: [],
+      pic: null
     };
+  }
+
+  componentDidMount(){
+    fetch("https://cocktail-recipes-tully4school.herokuapp.com/drinks")
+    .then(response => response.json())
+    .then(payload => this.setState({ drinks: payload }))
+    .catch(error => console.log(error))
   }
   
   getDrinks = () => {
@@ -30,8 +37,8 @@ class App extends Component {
           <Header />
           <Body />
           <Searchbar />
-          <button onClick={ this.getDrinks}>View Drinks</button>
-          <img src={ this.state.pic } alt="Drink pic"/>
+          <button onClick={ this.getDrinks}>View Random Drinks</button>
+          { this.state.pic && < img src={ this.state.pic } alt="Drink pic"/> }
           {/* <DrinkShow /> */}
           <Footer />
         </div>

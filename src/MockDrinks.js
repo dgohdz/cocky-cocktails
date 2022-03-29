@@ -1,5 +1,4 @@
-let mockdrinks = {
-    "drinks": [{
+let mockdrinks = [{
         "drinkIngredients": ["Creme de Cacao", "Vodka"],
         "drinkMeasures": ["1 oz white", "1 oz"],
         "_id": "5dddb97efcf1fb0004040f03",
@@ -6630,6 +6629,5 @@ let mockdrinks = {
         "drinkInstructions": "Shake Rum, Amaretto, and Orange Juice in a shaker filled with ice. Strain over ice into a highball glass. Add Grenadine and garnish with a Pineapple Wedge and a Strawberry.",
         "__v": 0
     }]
-}
 
 export default mockdrinks
