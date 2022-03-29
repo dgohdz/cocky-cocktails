@@ -12,7 +12,8 @@ class App extends Component {
     super(props);
     this.state = {
       drinks: [],
-      pic: null
+      pic: null,
+      ingredients: null
     };
   }
 
@@ -25,8 +26,13 @@ class App extends Component {
   
   getDrinks = () => {
     let randomNum = Math.floor(Math.random() * this.state.drinks.length)
-    this.setState({ pic: this.state.drinks[randomNum].drinkThumb })
+    this.setState({ pic: this.state.drinks[randomNum].drinkThumb, ingredients: this.state.drinks[randomNum].drinkIngredients })
   }
+
+  // getIngredients = () => {
+  //   let 
+  //   this.setState({ingredients: this.state.drinks.drinkIngredients})
+  // }
 
   render() {
 
@@ -39,6 +45,7 @@ class App extends Component {
           <Searchbar />
           <button onClick={ this.getDrinks}>View Random Drinks</button>
           { this.state.pic && < img src={ this.state.pic } alt="Drink pic"/> }
+          <p>These are the ingredients { this.state.ingredients }</p>
           {/* <DrinkShow /> */}
           <Footer />
         </div>
