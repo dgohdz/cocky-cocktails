@@ -1,0 +1,27 @@
+.search-container {
+    display: flex;
+    min-height: 25vh;
+    justify-content: center;
+    flex-direction: column;
+    border-style: dotted;
+}
+
+.searchbar {
+    border-style: double;
+    padding: 25px;
+    text-align: center;
+    align-items: center;
+    min-width: 800px;
+    margin: auto;
+}
+
+.search-label {
+    margin: auto;
+}
+
+.input {
+    text-align: center;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 1rem;
+}

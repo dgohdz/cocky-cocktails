@@ -7,7 +7,7 @@ class Header extends Component {
       <>
         <section>
           <div className="header-container">
-            <h1>Cocky Cocktails</h1>
+            <h1 className="neon-title">Cocky Cocktails</h1>
           </div>
         </section>
       </>
