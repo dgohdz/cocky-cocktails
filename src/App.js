@@ -1,11 +1,8 @@
 import { Component } from "react";
 import "./App.css";
-import Body from "./Components/Body";
 import Header from "./Components/Header";
 import Searchbar from "./Components/Searchbar";
-// import DrinkShow from "./Components/DrinkShow";
 import Footer from "./Components/Footer";
-// import mockdrinks from './MockDrinks'
 
 class App extends Component {
   constructor(props) {
@@ -13,7 +10,8 @@ class App extends Component {
     this.state = {
       drinks: [],
       pic: null,
-      ingredients: null
+      ingredients: null,
+      instructions: null
     };
   }
 
@@ -26,13 +24,8 @@ class App extends Component {
   
   getDrinks = () => {
     let randomNum = Math.floor(Math.random() * this.state.drinks.length)
-    this.setState({ pic: this.state.drinks[randomNum].drinkThumb, ingredients: this.state.drinks[randomNum].drinkIngredients })
+    this.setState({ pic: this.state.drinks[randomNum].drinkThumb, ingredients: this.state.drinks[randomNum].drinkIngredients, instructions: this.state.drinks[randomNum].drinkInstructions })
   }
-
-  // getIngredients = () => {
-  //   let 
-  //   this.setState({ingredients: this.state.drinks.drinkIngredients})
-  // }
 
   render() {
 
@@ -41,12 +34,11 @@ class App extends Component {
       <>
         <div className="app">
           <Header />
-          <Body />
           <Searchbar />
           <button onClick={ this.getDrinks}>View Random Drinks</button>
           { this.state.pic && < img src={ this.state.pic } alt="Drink pic"/> }
           <p>These are the ingredients { this.state.ingredients }</p>
-          {/* <DrinkShow /> */}
+          <p>This is how you make it { this.state.instructions }</p>
           <Footer />
         </div>
       </>
