@@ -6,8 +6,9 @@ export default class Searchbar extends Component {
     return (
         <>
         <div className='search-container'>
-          <label for='search' className='search-label'> Search Drink Flavor</label>
-          <input type='search' id='search' placeholder="Search a flavor" className='searchbar'/>
+          <div className='search-input'>
+          <input type='search' id='search' placeholder="Search a flavor" className='input'/>
+          </div>
         </div>
         </>
     )
