@@ -10,8 +10,9 @@ class App extends Component {
     this.state = {
       drinks: [],
       pic: null,
-      ingredients: null,
-      instructions: null
+      // ingredients: '',
+      // instructions: '',
+      // searchField: ''
     };
   }
 
@@ -21,24 +22,24 @@ class App extends Component {
     .then(payload => this.setState({ drinks: payload }))
     .catch(error => console.log(error))
   }
-  
-  getDrinks = () => {
-    let randomNum = Math.floor(Math.random() * this.state.drinks.length)
-    this.setState({ pic: this.state.drinks[randomNum].drinkThumb, ingredients: this.state.drinks[randomNum].drinkIngredients, instructions: this.state.drinks[randomNum].drinkInstructions })
-  }
+
+
+  // randomDrinks = () => {
+  //   let randomNum = Math.floor(Math.random() * this.state.drinks.length)
+  //   this.setState({ pic: this.state.drinks[randomNum].drinkThumb, ingredients: this.state.drinks[randomNum].drinkIngredients, instructions: this.state.drinks[randomNum].drinkInstructions })
+  // }
 
   render() {
-
-    console.log(this.state.drinks);
+    // const{drinks, ingredients, instructions} = this.state
+    // const filteredDrinks = drinks.filter()
     return (
       <>
         <div className="app">
           <Header />
-          <Searchbar />
-          <button onClick={ this.getDrinks}>View Random Drinks</button>
-          { this.state.pic && < img src={ this.state.pic } alt="Drink pic"/> }
-          <p>These are the ingredients { this.state.ingredients }</p>
-          <p>This is how you make it { this.state.instructions }</p>
+          {/* <Searchbar placeholder="Search a flavor..." handleChange={(e) => this.setState({searchField:e.target.value})}/> */}
+
+          <p>These are the ingredients</p>
+          <p>This is how you make it</p>
           <Footer />
         </div>
       </>
