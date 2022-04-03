@@ -1,48 +1,45 @@
 import { Component } from "react";
 import "./App.css";
 import Header from "./Components/Header";
-import Searchbar from "./Components/Searchbar"
+import Searchbar from "./Components/Searchbar";
 import Footer from "./Components/Footer";
-import mockdrinks from "./MockDrinks";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      drinks: mockdrinks.drinkName,
-      name: "",
-      ingredients: "",
-      instructions: ""
+      drinks: [],
+      pic: null,
+      ingredients: null,
+      instructions: null
     };
   }
 
-  /*componentDidMount(){
+  componentDidMount(){
     fetch("https://cocktail-recipes-tully4school.herokuapp.com/drinks")
     .then(response => response.json())
     .then(payload => this.setState({ drinks: payload }))
     .catch(error => console.log(error))
-  }*/
-
-  //Drink search result
-  // {drinks.map((value, key) => {
-  //   return <p className='drink-item'> {value.drinkName}</p>
-  // })}
-
-  randomDrinks = () => {
+  }
+  
+  getDrinks = () => {
     let randomNum = Math.floor(Math.random() * this.state.drinks.length)
-    this.setState({ name: this.state.drinks[randomNum].drinkName, ingredients: this.state.drinks[randomNum].drinkIngredients, instructions: this.state.drinks[randomNum].drinkInstructions })
+    this.setState({ pic: this.state.drinks[randomNum].drinkThumb, ingredients: this.state.drinks[randomNum].drinkIngredients, instructions: this.state.drinks[randomNum].drinkInstructions })
   }
 
+
   render() {
-    // const{drinks, ingredients, instructions} = this.state
-    // const filteredDrinks = drinks.filter()
+
+    console.log(this.state.drinks);
     return (
       <>
         <div className="app">
           <Header />
-          <Searchbar placeholder="Search a flavor..."/>
-          <button onClick={this.randomDrinks}>View Random Drinks</button>
-          <p>{this.state.name}</p>
+          <Searchbar />
+          <button onClick={ this.getDrinks}>View Random Drinks</button>
+          { this.state.pic && < img src={ this.state.pic } alt="Drink pic"/> }
+          <p>These are the ingredients { this.state.ingredients }</p>
+          <p>This is how you make it { this.state.instructions }</p>
           <Footer />
         </div>
       </>

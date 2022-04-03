@@ -4,6 +4,7 @@ import '../Stylesheets/Searchbar.css'
 export default class Searchbar extends Component {
   constructor(props){
     super(props)
+    
   }
   render() {
     return (
@@ -17,7 +18,9 @@ export default class Searchbar extends Component {
       </div>
     </div>
     <div className='drink-result'>
-
+    {/* {drinks.map((value, key) => {
+        return <p className='drink-item'> {value.drinkName}</p>
+      })} */}
     </div>
       </>
     )
@@ -38,9 +41,9 @@ export default class Searchbar extends Component {
 //       </div>
 //     </div>
 //     <div className='drink-result'>
-//       {/* {drinks.map((value, key) => {
+//       {drinks.map((value, key) => {
 //         return <p className='drink-item'> {value.drinkName}</p>
-//       })} */}
+//       })}
 //     </div>
 //     </>
 //   )
