@@ -2,16 +2,32 @@
     border-style: double;
     min-height: 25vh;
     display:flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .input {
     height: 75px;
     border-color: none;
-    width:400px;
+    width:500px;
     text-align: center;
     font-size: x-large;
     font-weight: bold;
     border-radius: 100px;
     color:rgb(99, 30, 30);
+}
+
+.drink-image {
+    height: auto;
+    width:20rem;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+}
+.drink-info{
+    margin: auto;
+    align-self: center;
+    align-items: center;
 }
