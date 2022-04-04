@@ -6,9 +6,8 @@
     min-height: 25vh;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    border-style: dashed;
-    border-color: aliceblue;
+    /* border-style: dashed; */
+
 }
 
 .neon-title {
