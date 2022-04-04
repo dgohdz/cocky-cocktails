@@ -1,27 +1,17 @@
 .search-container {
-    display: flex;
-    min-height: 25vh;
-    justify-content: center;
-    flex-direction: column;
-    border-style: dotted;
-}
-
-.searchbar {
     border-style: double;
-    padding: 25px;
-    text-align: center;
-    align-items: center;
-    min-width: 800px;
-    margin: auto;
-}
-
-.search-label {
-    margin: auto;
+    min-height: 25vh;
+    display:flex;
+    justify-content: center;
 }
 
 .input {
+    height: 75px;
+    border-color: none;
+    width:400px;
     text-align: center;
-    height: 50px;
-    border-radius: 50px;
-    font-size: 1rem;
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 100px;
+    color:rgb(99, 30, 30);
 }
