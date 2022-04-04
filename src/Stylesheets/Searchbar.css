@@ -122,9 +122,53 @@
     align-self: center;
     align-content: center;
     justify-content: center;
+    border-radius: 10rem;
+}
+
+@media screen and (max-width:360px) {
+  .drink-image {
+    width: 10rem;
+    height: auto;
+    /* margin: auto; */
+  }
+}
+
+@media screen and (max-width:375x) {
+  .drink-image {
+    width: 10rem;
+    height: auto;
+    /* margin: auto; */
+  }
+}
+
+@media screen and (max-width:390px) {
+  .drink-image {
+    width: 10rem;
+    height: auto;
+    /* margin: auto; */
+  }
+}
+
+@media screen and (max-width:414px) {
+  .drink-image {
+    width: 10rem;
+    /* margin: auto; */
+  }
 }
 .drink-info{
     text-align: center;
     font-size: x-large;
     font-family: 'League Spartan', sans-serif;
+}
+
+.drink-name {
+  color: burlywood;
+}
+
+.drink-instructions-heading {
+  text-decoration: underline;
+}
+
+.drink-ingredients-heading {
+  text-decoration: underline;
 }

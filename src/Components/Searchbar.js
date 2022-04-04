@@ -37,11 +37,11 @@ function Searchbar() {
         />
         {filteredData.map((val)=>{
           return <div key={val.id} className='drink-info'>
-            <h2>{val.drinkName}</h2>
+            <h2 className="drink-name">{val.drinkName}</h2>
             <img className="drink-image" src={val.drinkThumb} alt='Drink Image'/>
-            <h3>This is how you make it...</h3>
+            <h3 className="drink-instructions-heading">This is how you make it...</h3>
             <p>{val.drinkInstructions}</p>
-            <h3>These are the ingredients...</h3>
+            <h3 className="drink-ingredients-heading">These are the ingredients...</h3>
             <p>{val.drinkIngredients}</p>
             </div>
         })}
