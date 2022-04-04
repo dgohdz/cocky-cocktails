@@ -1,31 +1,35 @@
-import React, { Component } from 'react'
+import React from 'react'
 import '../Stylesheets/Searchbar.css'
 
-export default class Searchbar extends Component {
-  constructor(props){
-    super(props)
+const Searchbar = () => <h1>This is the searchbar</h1>
+
+export default Searchbar
+
+// export default class Searchbar extends Component {
+//   constructor(props){
+//     super(props)
     
-  }
-  render() {
-    return (
-      <>
-      <div className='search-container'>
-      <div className='search-input'>
-        <input type='text' 
-        className='input' 
-        id='search' 
-        placeholder={this.props.placeholder}/>
-      </div>
-    </div>
-    <div className='drink-result'>
-    {/* {drinks.map((value, key) => {
-        return <p className='drink-item'> {value.drinkName}</p>
-      })} */}
-    </div>
-      </>
-    )
-  }
-}
+//   }
+//   render() {
+//     return (
+//       <>
+//       <div className='search-container'>
+      // <div className='search-input'>
+      //   <input type='text' 
+      //   className='input' 
+      //   id='search' 
+      //   placeholder={this.props.placeholder}/>
+      // </div>
+//     </div>
+//     <div className='drink-result'>
+//     {drinks.map((value, key) => {
+//         return <p className='drink-item'> {value.drinkName}</p>
+//       })}
+//     </div>
+//       </>
+//     )
+//   }
+// }
 
 
 // const Searchbar = (placeholder, drinks) => {
