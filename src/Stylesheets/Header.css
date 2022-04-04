@@ -1,20 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
 
 
 .header-container {
     display: flex;
-    min-height: 25vh;
     justify-content: center;
     align-items: center;
-    /* border-style: dashed; */
+    padding: 50px;
+  }
 
-}
+  @media screen and (max-width:360px) {
+    .header-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+    }
+  }
+
+  @media screen and (max-width:375px) {
+    .header-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width:390px) {
+    .header-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+    }
+  }
+  
+  @media screen and (max-width:414px) {
+    .header-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+    }
+  }
 
 .neon-title {
-    font-family: 'Fuggles', cursive;
-    font-size: 150px;
+    font-family: 'Fuggles';
+    font-size: 200px;
     text-align: center;
     color: #fff;
+    margin: auto;
     animation: flicker 1.5s infinite alternate;
     text-shadow:
       0 0 7px #fff,
@@ -25,6 +58,38 @@
       0 0 92px rgb(244, 245, 181),
       0 0 102px rgb(244, 245, 181),
       0 0 151px rgb(244, 245, 181)
+}
+
+@media screen and (max-width:360px) {
+  .neon-title {
+    text-align: center;
+    font-size: 120px;
+    margin: auto;
+    max-width: fit-content;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .neon-title {
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width:390px) {
+  .neon-title {
+    text-align: center;
+    font-size: 120px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:414px) {
+  .neon-title {
+    text-align: center;
+    font-size: 150px;
+    margin: auto;
+  }
 }
 
 @keyframes flicker {

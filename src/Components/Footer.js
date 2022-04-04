@@ -6,8 +6,8 @@ export default class Footer extends Component {
     return (
       <>
         <section>
-          <div className="footer-container">
-            <p className="footer-heading">Created by Diego Hernandez 2022</p>
+          <div className='footer'>
+            <p>Created by Diego Hernandez © 2022</p>
           </div>
         </section>
       </>

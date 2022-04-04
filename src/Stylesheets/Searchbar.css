@@ -4,29 +4,116 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 250px;
-    margin: auto;
 }
+
+@media screen and (max-width:360px) {
+    .search-container {
+      /* min-width: 375px; */
+      margin: auto;
+    }
+  }
+
+  @media screen and (max-width:375px) {
+    .search-container {
+      /* min-width: 375px; */
+      margin: auto;
+    }
+  }
+
+  @media screen and (max-width:390px) {
+    .search-container {
+      /* min-width: 375px; */
+      margin: auto;
+    }
+  }
+
+@media screen and (max-width:414px) {
+    .search-container {
+      /* min-width: 375px; */
+      margin: auto;
+    }
+  }
 
 .search-title {
-    margin: auto;
     text-align: center;
-    font-style: italic;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'League Spartan', sans-serif;
 }
 
+@media screen and (max-width:360px) {
+    .search-title {
+      text-align: center;  
+      margin: auto;
+      font-size: x-large;
+    }
+  }
+
+  @media screen and (max-width:375px) {
+    .search-title {
+      text-align: center;  
+      margin: auto;
+      font-size: x-large;
+    }
+  }
+  @media screen and (max-width:390px) {
+    .search-title {
+      text-align: center;  
+      margin: auto;
+      font-size: x-large;
+    }
+  }
+
+@media screen and (max-width:414px) {
+    .search-title {
+      text-align: center;  
+      margin: auto;
+      font-size: x-large;
+    }
+  }
+
 .input {
-    height: 75px;
+    height: 50px;
     border-color: none;
     border-style: none;
     width:500px;
     text-align: center;
     font-size: x-large;
     font-weight: bold;
-    border-radius: 100px;
+    border-radius: 10px;
     color:rgb(99, 30, 30);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'League Spartan', sans-serif;
 }
+
+@media screen and (max-width:360px) {
+    .input {
+      max-width: 200px;
+      /* margin: auto; */
+    }
+  }
+
+  @media screen and (max-width:375px) {
+    .input {
+      max-width: 250px;
+      /* margin: auto; */
+    }
+  }
+
+  @media screen and (max-width:390px) {
+    .input {
+      max-width: 250px;
+      /* margin: auto; */
+    }
+  }
+
+@media screen and (max-width:414px) {
+    .input {
+      max-width: 300px;
+      /* margin: auto; */
+    }
+  }
+
+/* .input:hover {
+
+} */
 
 .drink-image {
     height: auto;
@@ -39,4 +126,5 @@
 .drink-info{
     text-align: center;
     font-size: x-large;
+    font-family: 'League Spartan', sans-serif;
 }

@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+
 .App {
   min-height: 100vh;
-  border-style: dashed;
-  border-color: #191D1C;
   color: whitesmoke;
-  background-color: #191D1C;
+  background-image: url('./Assets/cocktails-background.jpg');
+  background-repeat:no-repeat;
+  background-color: black;
+  background-position: center;
+  align-items: center;
+  align-content: center;
 }

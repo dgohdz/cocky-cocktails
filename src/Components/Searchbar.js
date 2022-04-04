@@ -26,10 +26,8 @@ function Searchbar() {
 
   return (
     <>
-    <div>
-      <h1 className="search-title">Search a drink or ingredient!</h1>
-    </div>
     <div className="search-container">
+    <h1 className="search-title">Search a drink or ingredient!</h1>
         <input
           type="text"
           className="input"
