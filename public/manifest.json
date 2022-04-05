@@ -1,5 +1,6 @@
 {
   "short_name": "React App",
+  "icon": ".cocktail-icon.jpg",
   "name": "Create React App Sample",
   "start_url": ".",
   "display": "standalone",
