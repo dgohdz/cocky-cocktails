@@ -31,7 +31,7 @@ function Searchbar() {
           placeholder="Search.."
           onChange={(e) => setSearch(e.target.value)}
         />
-        {filteredData.map((val)=>{
+        {filteredData.length === 0 ? <p className="no-result">Drink Not Found :(</p> : filteredData.map((val)=>{
           return <div key={val.id} className='drink-info'>
             <h2 className="drink-name">{val.drinkName}</h2>
             <img className="drink-image" src={val.drinkThumb} alt="drink"/>

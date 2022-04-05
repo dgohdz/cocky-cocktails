@@ -150,6 +150,34 @@
     font-family: 'League Spartan', sans-serif;
 }
 
+@media screen and (max-width:360px) {
+  .drink-info {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .drink-info {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:390px) {
+  .drink-info {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:414px) {
+  .drink-info {
+    font-size: 1rem;
+  }
+}
+
+.no-result{
+  font-size: x-large;
+}
+
 .drink-name {
   color: burlywood;
 }
